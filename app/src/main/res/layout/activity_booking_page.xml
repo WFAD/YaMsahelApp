@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/divider_layout"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:showDividers="middle"
+    tools:context="com.abdallahmurad.the_project.Booking.BookingPage.BookingPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#2854a1"
+        android:elevation="6dp"
+        android:gravity="center"
+        android:text="Book Now!"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="35dp">
+
+        <TextView
+            android:id="@+id/booked_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Ottoman Apertele Suites"
+            android:textAlignment="center"
+            android:textColor="#234373"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hotel_city"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Istunbul, Turkey"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <include layout="@layout/check_layout" />
+
+    <include layout="@layout/final_price_layout" />
+
+    <include layout="@layout/hotel_currancey_layout" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/draw_checkout_btn"
+        android:elevation="6dp"
+        android:text="Proceed to checkout" />
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/hotel_currancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hotel will request payment in EUR instead of ILS"
+        android:textColor="#2c4c7a"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="EUR 35.5 (1 EUR = 4.31 ILS)"
+        android:textColor="#999daa"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price based on todays exchange rates"
+        android:textColor="#999daa"
+        android:textSize="14sp"
+      />
+
+</LinearLayout>

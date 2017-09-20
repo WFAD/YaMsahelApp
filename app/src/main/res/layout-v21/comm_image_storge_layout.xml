@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="vertical"
+    tools:context=".commimg_storge.ImageActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:src="@drawable/ic_cloud_upload" />
+
+        <LinearLayout
+            android:id="@+id/layout_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/status_sign_in"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_1"
+                android:text="@string/sign_in_prompt" />
+
+            <Button
+                android:id="@+id/button_sign_in"
+                android:layout_width="@dimen/standard_field_width"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_in_anonymously" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:visibility="visible">
+
+            <Button
+                android:id="@+id/button_camera"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_file_upload"
+                android:drawableStart="@drawable/ic_file_upload"
+                android:text="@string/camera_button_text" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_1"
+                android:layout_marginBottom="@dimen/margin_1"
+                android:layout_weight="1"
+                android:text="@string/take_photo_prompt" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_2"
+                android:text="@string/label_link" />
+
+            <TextView
+                android:id="@+id/picture_download_uri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                tools:text="http://www.example.com/?id=UAOJNVKBMQUGPYZKCQZRZKJEXRCRXMRSMFBZBMBODWUSVTDXJCPJMYOKQQBODSGPYHPZUR" />
+
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_1"
+                android:layout_marginTop="@dimen/margin_2"
+                android:text="@string/label_download" />
+
+            <Button
+                android:id="@+id/button_download"
+                style="@style/Base.Widget.AppCompat.Button.Colored"
+                android:layout_width="@dimen/standard_field_width"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_file_download"
+                android:text="@string/download" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="20dp"
+    android:weightSum="2">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="You will pay"
+            android:textSize="21sp"
+            android:textColor="#2d4a79"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="(with fees and taxes)"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="ILS 165"
+        android:textStyle="bold"
+        android:textColor="#274674"
+        android:id="@+id/booked_price"
+        android:textSize="20sp"
+        android:textAlignment="textEnd"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
