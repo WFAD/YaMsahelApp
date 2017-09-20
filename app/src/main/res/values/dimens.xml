@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="bookingDetails" >15sp</dimen>
+    <dimen name="addRoomWidth">35dp</dimen>
+    <dimen name="addRoomHeight">35dp</dimen>
+    <dimen name="bookingDetails2" >12sp</dimen>
+    <dimen name="bookingDetailsWidth" >39dp</dimen>
+    <dimen name="bookingDetailsHight" >36dp</dimen>
+    <dimen name="bookingDetailsNum" >18dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="standard_field_width">160dp</dimen>
+    <dimen name="margin_1">8dp</dimen>
+    <dimen name="margin_2">16dp</dimen>
+
+
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:src="@drawable/call_image" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4d668d"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/support_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="65dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/callBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/free_call_draw"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_call"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/free_call" />
+
+
+        <Button
+            android:id="@+id/messageBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/vip_assistant_draw"
+            android:drawablePadding="8dp"
+            android:drawableStart="@drawable/ic_chat_white_24dp"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:text="@string/vip_assistant" />
+
+
+    </LinearLayout>
+</LinearLayout>

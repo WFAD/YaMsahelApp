@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/hotel_image"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/hotels" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/pay_now"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_pay_now" />
+
+            <ImageView
+                android:id="@+id/pay_at_hotel"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_pay_at_hotel" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotel_image"
+            android:layout_margin="10dp"
+            android:text="Kuran Hotel International"
+            android:textColor="@color/cityColor"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/hotel_details"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotel_name"
+            android:layout_marginStart="10dp"
+            android:text="1.16 km from city center\nHas been Booked one houer ago" />
+
+
+        <ImageView
+            android:id="@+id/fav_hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/hotel_image"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_favorite_grey" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotel_details"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/divider_layout" />
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/cardBack"
+        app:cardElevation="8dp"
+        app:contentPadding="5dp">
+
+
+        <TextView
+            android:id="@+id/hotel_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="EUR 139"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/hotel_taxes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="23dp"
+            android:gravity="center_horizontal"
+
+            android:text="Taxes not included\n 3 nights,1 room"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="10sp" />
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

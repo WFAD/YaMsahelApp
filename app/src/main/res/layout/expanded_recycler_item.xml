@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="480dp">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/image_slider"
+        android:layout_width="match_parent"
+        android:layout_height="145dp" />
+
+    <TextView
+        android:id="@+id/max_adults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_slider"
+        android:layout_margin="10dp"
+        android:text="Up to 2 adults"
+        android:textColor="@color/cityColor"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/see_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/image_slider"
+        android:layout_margin="8dp"
+        android:text="See room details"
+        android:textColor="@color/bookingDetails"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/see_details"
+        android:layout_marginTop="5dp"
+        android:background="#c7c4c1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="OPTIONS"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:padding="5dp"
+            android:text="TOTAL PRICE"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/adults_per_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_bar"
+        android:layout_margin="10dp"
+        android:text="2 adults" />
+
+    <TextView
+        android:id="@+id/is_refunded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adults_per_price"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="NON-REFUNDABLE"
+        android:textColor="#f06a5e" />
+
+    <TextView
+        android:id="@+id/wireless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/is_refunded"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Free Wireless Internet"
+        android:textColor="#1bc19d" />
+
+    <TextView
+        android:id="@+id/parking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wireless"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Free Parking"
+        android:textColor="#1bc19d" />
+
+    <TextView
+        android:id="@+id/see_details2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/parking"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="See full details"
+        android:textColor="@color/bookingDetails" />
+
+
+    <TextView
+        android:id="@+id/price_per_adults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/info_bar"
+        android:layout_margin="10dp"
+        android:text="EUR 27"
+        android:textColor="@color/cityColor"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/room_taxes"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/price_per_adults"
+        android:layout_marginEnd="10dp"
+        android:text="Taxes not included 1 Night"
+        android:textDirection="rtl" />
+
+    <TextView
+        android:id="@+id/earn_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/room_taxes"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="20dp"
+        android:drawableEnd="@drawable/ic_small_wall"
+        android:gravity="center"
+        android:text="Earn USD 0.51"
+        android:textColor="@color/cityColor"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/room_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/earn_money"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/addRoomWidth"
+            android:id="@+id/remove_room"
+            android:layout_height="@dimen/addRoomHeight"
+            android:layout_marginEnd="30dp"
+            android:clickable="true"
+            android:background="@drawable/add_room_white"
+            android:padding="8dp"
+            android:src="@drawable/ic_blue_minus" />
+
+        <TextView
+            android:id="@+id/add_room_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Add Room"
+            android:textColor="@color/bottomStroke" />
+
+
+        <ImageView
+            android:layout_width="@dimen/addRoomWidth"
+            android:layout_height="@dimen/addRoomHeight"
+            android:id="@+id/add_room"
+            android:clickable="true"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/add_room_blue"
+            android:padding="3dp"
+            android:src="@drawable/ic_white_plus" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

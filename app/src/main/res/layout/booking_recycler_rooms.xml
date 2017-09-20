@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/rooms_image"
+        android:layout_width="48dp"
+        android:src="@drawable/room_image1"
+        android:layout_height="48dp" />
+
+    <TextView
+        android:id="@+id/rooms_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/rooms_image"
+        android:text="Double Room Single Use"
+        android:textColor="@color/cityColor"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/rooms_some_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rooms_type"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/rooms_image"
+        android:text="2 Room available from EUR 44 (1 night)"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/expand_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_down_arrow" />
+
+
+</RelativeLayout>

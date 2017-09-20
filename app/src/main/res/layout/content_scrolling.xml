@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Hotels.HotelData"
+    tools:showIn="@layout/activity_hotel_data">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/hotel_data_divider"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <include layout="@layout/payment_methods_layout" />
+
+        <include layout="@layout/details_name_rate_layout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:id="@+id/room_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:text="1 Aug - 2 Aug"
+                android:textColor="@color/bottomStroke"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/nights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/room_date"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:text="1 night" />
+
+            <ImageView
+                android:id="@+id/divider"
+                android:layout_width="5dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="50sp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/room_date"
+                android:src="@drawable/divider_layout2" />
+
+            <TextView
+                android:id="@+id/num_persons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/divider"
+                android:text="2 adults"
+                android:textColor="@color/bottomStroke"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/num_persons"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/divider"
+                android:text="1 room" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/hotel_services_layout" />
+
+        <!--<include layout="@layout/activity_maps"/>-->
+        <!--TODO:Fix the Crash When ReOpen-->
+        <include layout="@layout/reviews_ratring_layout" />
+
+        <include layout="@layout/review_card_layout" />
+
+        <include layout="@layout/sammary_layout" />
+
+        <include layout="@layout/hotel_support_layout" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

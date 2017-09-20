@@ -1,0 +1,30 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".Booking.PayAtHotelFragment">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/pay_at_hotel_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/book_now"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/bookingBtn"
+        android:gravity="center"
+        android:text="Book Now"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:visibility="gone"
+        android:textStyle="bold" />
+
+</FrameLayout>
+

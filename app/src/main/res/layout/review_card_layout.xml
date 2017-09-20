@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ratingText"
+        style="@style/Base.TextAppearance.AppCompat.Widget.ActionMode.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/excellent_5_5" />
+
+    <TextView
+        android:id="@+id/reviewTV"
+        style="@style/Base.TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ratingText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/review_body" />
+
+    <TextView
+        android:id="@+id/reviewWriter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reviewTV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/abdalalh_murad" />
+
+    <ImageView
+        android:id="@+id/flag_img"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignTop="@+id/reviewWriter"
+        android:layout_marginEnd="8dp"
+        android:layout_toStartOf="@+id/reviewWriter"
+        android:contentDescription="@string/the_flag_of_the_country"
+        android:src="@drawable/flag" />
+
+
+</RelativeLayout>

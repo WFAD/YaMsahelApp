@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbarBack"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <include layout="@layout/toolbar_custom_view" />
+
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/search_bar"
+            android:drawableLeft="@drawable/ic_search"
+            android:hint="@string/search_by_hotel_name"
+            android:maxLines="1"
+            android:padding="3dp"
+            android:paddingStart="75dp"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/hotels_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/appbar_layout"
+        app:layout_anchorGravity="bottom"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_anchor="@id/hotels_list"
+        app:layout_anchorGravity="bottom|center_horizontal">
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:id="@+id/filter_button"
+            android:background="@drawable/filter_button"
+            android:drawableLeft="@drawable/ic_filter"
+            android:padding="10dp"
+            android:text="filter"
+            android:textAllCaps="false"
+            android:textColor="@color/bottomStroke" />
+
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:background="@drawable/map_button"
+            android:drawableLeft="@drawable/ic_map"
+            android:padding="10dp"
+            android:text="Map"
+            android:textAllCaps="false"
+            android:textColor="@color/bottomStroke" />
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
+
+

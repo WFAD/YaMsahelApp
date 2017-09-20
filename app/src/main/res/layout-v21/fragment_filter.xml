@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/hotel_data_divider"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context="com.example.desmond.project.Hotels.Options.Filters">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_exit" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="Filter And Sort"
+            android:textColor="@color/cityColor"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_refresh_gray" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/nights_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="50dp"
+            android:paddingStart="50dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:id="@+id/room_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 Aug - 2 Aug"
+
+                android:textColor="@color/bottomStroke"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/nights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1 night" />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/divider"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/divider_layout2" />
+
+        <LinearLayout
+            android:id="@+id/people_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/num_persons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 adults"
+                android:textColor="@color/bottomStroke"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/rooms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="1 room" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/price_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Price range/night"
+            android:textColor="@color/cityColor"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/price_rang1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/price_filter"
+            android:layout_marginStart="10dp"
+            android:text="EUR 56"
+            android:textColor="@color/bottomStroke"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_rang2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/price_filter"
+            android:layout_marginEnd="10dp"
+            android:text="EUR 4.183"
+            android:textColor="@color/bottomStroke"
+            android:textStyle="bold" />
+
+        <io.apptik.widget.MultiSlider
+            android:id="@+id/range_sliders"
+            android:layout_width="340dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/price_rang1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:elevation="5dp"
+            app:drawThumbsApart="true"
+            app:rangeColor="@color/addRoomCircule"
+            app:thumbColor="@android:color/darker_gray"
+            app:thumbNumber="2"
+
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/stars_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Stars"
+            android:textColor="@color/cityColor"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/stars_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stars_filter"
+            android:layout_marginStart="15dp">
+
+            <TableRow>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/stars_filter_btn"
+                    android:text="1 (19)"
+                    android:textColor="@color/bookingDetails"
+
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/stars_filter_btn"
+                    android:text="2 (219)"
+                    android:textColor="@color/bookingDetails"
+
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/stars_filter_btn"
+                    android:text="3 (705)"
+                    android:textColor="@color/bookingDetails"
+
+
+                    />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="10dp">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/stars_filter_btn"
+                    android:text="4 (351)"
+                    android:textColor="@color/bookingDetails"
+
+
+                    />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/stars_filter_btn"
+                    android:text="5 (66)"
+                    android:textColor="@color/bookingDetails" />
+
+            </TableRow>
+
+
+        </TableLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_discount_filter"
+            android:text="Show hotels with discount only"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51797474"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/apply_filter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/select_room_draw"
+            android:elevation="6dp"
+            android:text="Apply Filter"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

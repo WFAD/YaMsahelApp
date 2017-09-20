@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".Hotels.Options.PeopleFilter">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Pick rooms and guests"
+            android:textColor="#34517d"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:id="@+id/image_like"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+
+            android:src="@drawable/like" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@+id/image_like"
+            android:text="Best Combination"
+            android:textColor="#34517d"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1"
+            android:layout_toEndOf="@+id/image_like"
+            android:text="We will automatically suggest room combinations to get the price from each hotel"
+            android:textColor="#7387a5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+
+        >
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="Suggest rooms automatically"
+            android:textSize="16dp"
+
+            />
+
+        <Switch
+            android:id="@+id/auto"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/tv2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+
+            android:id="@+id/min_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="29.83"
+            android:background="#fff"
+            android:src="@drawable/ic_min" />
+
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="17.45"
+            android:text="4 Rooms"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/add_room"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40.99"
+            android:background="#fff"
+            android:src="@drawable/ic_add" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+
+            android:id="@+id/min_adults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="29.83"
+            android:background="#fff"
+            android:src="@drawable/ic_min" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="17.45"
+            android:text="4 adults"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/add_adults"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="40.99"
+            android:background="#fff"
+            android:src="@drawable/ic_add" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Add child"
+        android:textAlignment="center"
+        android:textColor="#7386d2"
+        android:textSize="20dp"
+
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@color/RoomsGuests"
+            android:fontFamily="sans-serif  "
+            android:gravity="center"
+            android:text="Save (4 rooms, 4 guests )"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20dp"
+
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
